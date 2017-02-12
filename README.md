@@ -1,2 +1,2 @@
 # Compiladores
-jotos todos
+Analizador Sintáctico
