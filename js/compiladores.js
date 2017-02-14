@@ -16,10 +16,10 @@ function isNumber(res){
 		}
 	}
 	return true;
-}	
+}
 
 function leer(){
-	var correcto=true;	
+	var correcto=true;
 	var tex=document.getElementById("texto").value;
 	console.log(tex.length);
 	var arr = [];
@@ -57,7 +57,7 @@ function leer(){
 			if(res[i].length>1){
 				var p=res[i];
 				p=p.substring(1,res[i].length);
-				
+
 				if (!isWord(p) && !isNumber(p)) {
 					if (!(p[0]=='(') && !(p[0]==')')) {
 						if (p[p.length-1]==')') {
@@ -72,7 +72,7 @@ function leer(){
 							arr[c]=res[i];
 							c++;
 						}
-						
+
 					}
 				}
 			}
@@ -97,10 +97,10 @@ function leer(){
 	}
 	var t="";
 	if(arr.length==0){
-		t='No hay caracteres erroneos';
+		t='No hay errores.';
 	}
 	for (var i = 0; i <arr.length; i++) {
-		t=t+'<div>'+arr[i]+'</div>'
+		t=t+'<div>'+ 'Error '+ i+1 + ': '+ arr[i]+'</div>'
 	}
 	document.getElementById("correccion").innerHTML=t;
 }
