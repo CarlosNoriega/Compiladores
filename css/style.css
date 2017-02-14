@@ -1,0 +1,29 @@
+*{
+  font-family: 'Lato', sans-serif;
+  background-color: black;
+  color: white;
+}
+
+textarea{
+  width: 100%;
+  color: #00FF40;
+}
+
+button{
+  margin: 1em;
+}
+
+.page-header{
+  text-align: center;
+  margin-top: -2px;
+}
+
+.mistakes{
+  height: 610px;
+  border: 1px solid white;
+}
+
+.table-column-names .col-sm-6{
+  text-align: center;
+  font-weight: bold;
+}
