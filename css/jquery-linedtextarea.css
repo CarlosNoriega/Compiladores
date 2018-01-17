@@ -32,6 +32,7 @@
 
 .linedtextarea textarea, .linedwrap .codelines .lineno {
 	font-size: 10pt;
+	font-family: monospace;
 	line-height: normal !important;
 }
 
